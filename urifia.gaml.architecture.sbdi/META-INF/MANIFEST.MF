@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Sbdi
+Bundle-SymbolicName: urifia.sbdi.gaml.additions;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: urifia.sbdi.gaml.additions
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: msi.gama.core;bundle-version="1.8.1",
+ msi.gama.ext;bundle-version="1.8.1"
+Bundle-ClassPath: bin/,
+ .
+Export-Package: gaml.additions,
+ urifia.gaml.architecture.sbdi

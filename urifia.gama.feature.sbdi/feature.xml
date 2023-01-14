@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="urifia.gama.feature.sbdi"
+      label="Sbdi"
+      version="1.0.0.qualifier">
+
+   <description url="http://www.example.com/description">
+      [This plugin embeds a new architecture called SBDI that take into account the spatial reasoning process bases on Region Connection Calculus. This one allows to model the human behavior with a spatial thinking/reasoning dimension defined by several statements
+and dedicated to the land-use modelling activities.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Copyright(C) - 2025 SK/URIFIA]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="urifia.sbdi.gaml.additions"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

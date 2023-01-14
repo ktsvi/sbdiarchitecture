@@ -1,0 +1,38 @@
+experiment "Tests for urifia.gaml.architecture.sbdi" type: test {
+
+	test "Operator get_sk_power" {
+		assert get_sk_power(new_spatial_knowledge('hunterVillageInRegion',0.9))=1.0;
+		assert get_sk_power(new_spatial_knowledge('hunterVillageInRegion',1.0,0.1))=1.0;
+	}
+
+	test "Operator get_modality" {
+		assert get_modality(new_smental_state('Belief',new_sk_predicate('test1')))='Belief';
+	}
+
+	test "Operator get_sk_decay_value" {
+		assert get_sk_decay_value(new_spatial_knowledge('district1OverlapProtectedArea',1.0,0.002))=0.002;
+	}
+
+	test "Operator get_ms_lifetime" {
+		assert get_ms_lifetime(new_smental_state('Belief',new_sk_predicate('test1'),10))=10;
+	}
+
+	test "Operator new_spatial_knowledge" {
+		assert get_sk_power(new_spatial_knowledge('newSKbyName',0.9)) = 0.9;
+	}
+
+	test "Operator get_ms_power" {
+		assert get_ms_power(new_smental_state('Belief',new_sk_predicate('testforSkpred')))=1.0;
+	}
+
+	test "Operator get_truth" {
+		assert get_truth(new_sk_predicate('test1'))=true;
+	}
+
+	test "Operator new_spatial_knowledge (1)" {
+		spatialknowledge sk <- new_spatial_knowledge("protectedAreaInDistrict1");
+		 assert sk.sk_name = "protectedAreaInDistrict1";
+		 assert sk.sk_power  = 1.0;
+	}
+
+}
