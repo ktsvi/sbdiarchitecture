@@ -1,4 +1,4 @@
-# SBDI architecture with GAMA simulation platform
+# SBDI Architecture, a new BDI extension in GAMA simulation platform
 
 Key-words: Agent-based Modelling, BDI, Spatial Knowledge Representation, RCC Theory, Practical Reasoning, Decision-Making, Land Use Simulation.
 
